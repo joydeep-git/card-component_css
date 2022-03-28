@@ -35,6 +35,7 @@ html{
     --font-secondary /* (Weights: 400, 700) */ : 'Inter', sans-serif;
 }
 body{
+    margin:1rem 0;
     background-color: var(--clr-very-dark-blue);
     text-align: center;
     display: flex;
@@ -109,7 +110,11 @@ main div img{
 }
 
 @media screen and (min-width: 900px)
-{
+{   
+    body{
+        margin: 0;
+        padding: 0;
+    }
     main{
         display: flex;
         flex-direction: row-reverse;
@@ -134,7 +139,7 @@ main div img{
     }
 
     .part1 h1{
-        font: size 1rem;
+        font-size: 2rem;
         line-height: 2.5rem;
     }
     .part1 p{
