@@ -108,22 +108,51 @@ main div img{
     margin: 2rem;
 }
 
-@media screen and (min-width: 600px){
-
+@media screen and (min-width: 900px)
+{
     main{
         display: flex;
         flex-direction: row-reverse;
-        height: 25rem;
-        width: 60rem;
+        height: 30rem;
+        width: 72rem;
     }
-    .main-img{
-        
+    .img-color{
+        src: url(/images/image-header-desktop.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
     }
 
+    .section{
+        margin:2rem;
+        margin-left: 1.5rem;
+    }
 
+    .part1{
+        margin-top: 3rem;
+        text-align: left
+    }
 
+    .part1 h1{
+        font: size 1rem;
+        line-height: 2.5rem;
+    }
+    .part1 p{
+        font-size: 1.1rem;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 1.5rem;
+        margin-right: 4rem;
+        font: var(--font-primary);
+        line-height: 1.8rem;
+    }
 
-
-
-
+    .part2{
+        display: flex;
+        text-align: left;
+        align-items: left;
+    }
+    .part2 h2{
+        font-size: 1.5rem;
+    }
 }
