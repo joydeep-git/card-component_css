@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&display=swap');
 
-/* font -- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 700
-
-- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
-- Weights: 400 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 /* 
 display 
@@ -32,5 +28,102 @@ html{
     --clr-White /* (main heading, stats) */ : #ffffff;
     --clr-Slightly-transparent-white /* (main paragraph) */ : #ffffffbf;
     --clr-Slightly-transparent-white /* (stat headings) */ : #ffffff99;
+    
+
+    --font-primary /*(weight: 400)*/  : font-family: 'Lexend Deca', sans-serif;
+
+    --font-secondary /* (Weights: 400, 700) */ : 'Inter', sans-serif;
+}
+body{
+    background-color: var(--clr-very-dark-blue);
+    text-align: center;
+    display: flex;
+    place-items: center;
+    background-size: contain;
+    min-height: 100vh;
+    justify-content: center;
+    color: var(--clr-White);
+}
+main{
+    font-family: var(--font-primary);
+    margin: 1px;
+    background-color: var(--clr-Dark-desaturated-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 375px;
 }
 
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.img-color{
+    background-color: var(--clr-Soft-violet);
+    overflow: var(--clr-Soft-violet);
+    height: 275.219px;
+}
+
+.part1{
+    margin: 2rem;
+}
+.part1 h1{
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+.part1 h1 span{
+    color: var(--clr-Soft-violet);
+}
+.part1_p{
+    font-family: var(font-family: 'Lexend Deca', sans-serif;);
+    color: var(--clr-Slightly-transparent-white);
+    margin: 0.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0px;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.part2 h2{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    padding: 0.6rem;
+}
+.part2 p{
+    color: var(--clr-Slightly-transparent-white);
+    font-size: 0.75rem;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    letter-spacing: 2.5px;
+}
+
+.part2 div{
+    margin: 2rem;
+}
+
+@media screen and (min-width: 600px){
+
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 25rem;
+        width: 60rem;
+    }
+    .main-img{
+        
+    }
+
+
+
+
+
+
+
+}
