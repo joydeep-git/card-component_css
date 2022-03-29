@@ -79,7 +79,7 @@ main div img{
     color: var(--clr-Soft-violet);
 }
 .part1_p{
-    font-family: var(font-family: 'Lexend Deca', sans-serif;);
+    font-family: var(--font-primary);
     color: var(--clr-Slightly-transparent-white);
     margin: 0.8rem;
     margin-top: 1.5rem;
